@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.img{
+    height: 600px;
+}
+.boxes{
+    left: 10%;
+    bottom:0%;
+}
+@media screen and (max-width: 600px) {
+    .boxes {
+      display: none;
+    }
+    .col-md-3{
+      margin: 5px;
+    }
+  }
