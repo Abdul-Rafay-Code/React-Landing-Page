@@ -4,7 +4,7 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 
 
-const AllProduct = () => {
+const AllItem = () => {
   const data = [
         {
           id:1,
@@ -60,11 +60,11 @@ const AllProduct = () => {
 
   return (
     <>
-    <h1 className='fs-1 text-center mt-5'>All Product</h1>
+    <h1 className='fs-1 text-center mt-5'>All Items</h1>
     <div className="mt-4 mb-4">
     <div className='flex flex-wrap justify-center px-4 lg:px-10 '>
         {
-          data.slice(0,4).map((item,index)=>{
+          data.map((item,index)=>{
 
             return (
               <>
@@ -172,4 +172,4 @@ const AllProduct = () => {
   )
 }
 
-export default AllProduct
+export default AllItem
